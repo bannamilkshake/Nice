@@ -24,32 +24,29 @@ nav ul li{list-style-type:none; display:inline-block;}
   font-size:20px;}
   </style>
   <script>
-  function validate()
-    {
+  function validate(){
+    
   var name1=document.getElementById("name").value; 
   var phone1=document.getElementById("phone").value; 
   var email1=document.getElementById("email").value; 
   var mesage1=document.getElementById("mesage").value; 
-  if(name1.length<5)
-  {
+  if(name1.length<5){
+  
     text="please enterfull name";
     em.innerHTML=text;
     return false;
   }
-if(isNaN(phone1)||phone1.lenghtL!=10)
-{
+if(isNaN(phone1)||phone1.lenghtL!=10){
   text-"please enter a vaild phone number";
   em.innerHTML=text;
   return false;
 }
-      if(email1.indexof("@")==-1||email1.lenght<6)
-      {
+      if(email1.indexof("@")==-1||email1.lenght<6) {
         text="Enter a valid email";
         em.innerHTML=text;
         return false;
       }
-      if(message1.length>400||message1.lebgth<3)
-      {
+      if(message1.length>400||message1.lebgth<3){
         text="Enter a message between 3 to 150 characters";
         em.innerHTML=text;
         return false;

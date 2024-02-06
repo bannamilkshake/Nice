@@ -18,7 +18,7 @@ height:100px;
  text-align:center;
  
 } 
-     nav ul li{list-style-type:none; display:inline-block;}
+nav ul li{list-style-type:none; display:inline-block;}
  a{text-decoration:none; margin:10px;
   color:black;
   font-size:20px;}
@@ -26,16 +26,47 @@ height:100px;
   <script>
   function validate()
     {
-     var name1=document.getElementById("name").value; 
+  var name1=document.getElementById("name").value; 
+  var phone1=document.getElementById("phone").value; 
+  var email1=document.getElementById("email").value; 
+  var mesage1=document.getElementById("mesage").value; 
+  if(name1.length<5)
+  {
+    text="please enterfull name";
+    em.innerHTML=text;
+    return false;
+  }
+if(isNaN(phone1)||phone1.lenghtL!=10)
+{
+  text-"please enter a vaild phone number";
+  em.innerHTML=text;
+  return false;
+}
+      if(email1.indexof("@")==-1||email1.lenght<6)
+      {
+        text="Enter a valid email";
+        em.innerHTML=text;
+        return false;
+      }
+      if(message1.length>400||message1.lebgth<3)
+      {
+        text="Enter a message between 3 to 150 characters";
+        em.innerHTML=text;
+        return false;
+      }
+      alert(form subitted succesfully!)"
+        return true;
+      
+
     }
+    
   </script>
 </head>
 <body>
-  <header><h1>Nice,France</h1>
+ <header><h1>Nice,France</h1>
  <nav>
  <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="hotels.html">Hotels</a></li>
+ <li><a href="index.html">Home</a></li>  <li><a href="hotels.html">Hotels</a></li>
   <li><a href="food.html">Food</a></li>
   <li><a href="contactus.html">Contact Us</a></li>
   
